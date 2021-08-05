@@ -1,0 +1,8 @@
+document.querySelector(".main").addEventListener("click",(el) => {
+    const colorblock = function() {
+      document.querySelectorAll(".clicked").forEach((box) => {
+        box.classList.remove("clicked")
+      })
+    }()
+    el.target.classList.add("clicked") 
+  })
